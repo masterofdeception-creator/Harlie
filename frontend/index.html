@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harlie Audio Visual Chat</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="avatar-panel">
+        <video id="avatarVideo" controls autoplay playsinline></video>
+      </section>
+      <section class="chat-panel">
+        <h1>Harlie – Audio-visueller Chat</h1>
+        <div class="transcript" id="transcript"></div>
+        <div class="response" id="response"></div>
+        <div class="controls">
+          <button id="recordButton">🎙️ Aufnahme starten</button>
+          <span id="recordingIndicator" hidden>Aufnahme läuft…</span>
+        </div>
+        <form id="textForm">
+          <label for="textInput">Oder Text eingeben:</label>
+          <div class="text-input-row">
+            <input type="text" id="textInput" autocomplete="off" placeholder="Nachricht eingeben" />
+            <button type="submit">Senden</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/assets/app.js" type="module"></script>
+  </body>
+</html>
